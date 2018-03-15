@@ -1,4 +1,4 @@
-package com.company.project.core;
+package com.vicinity.server.core;
 
 
 import org.apache.ibatis.exceptions.TooManyResultsException;

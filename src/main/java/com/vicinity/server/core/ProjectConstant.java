@@ -1,4 +1,4 @@
-package com.company.project.core;
+package com.vicinity.server.core;
 
 /**
  * 项目常量

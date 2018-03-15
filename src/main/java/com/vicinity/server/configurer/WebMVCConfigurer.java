@@ -1,4 +1,4 @@
-package com.company.project.configurer;
+package com.vicinity.server.configurer;
 
 import java.io.IOException;
 import java.nio.charset.Charset;
@@ -14,10 +14,10 @@ import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.serializer.SerializerFeature;
 import com.alibaba.fastjson.support.config.FastJsonConfig;
 import com.alibaba.fastjson.support.spring.FastJsonHttpMessageConverter;
+import com.vicinity.server.core.Result;
+import com.vicinity.server.core.ResultCode;
+import com.vicinity.server.core.ServiceException;
 
-import com.company.project.core.Result;
-import com.company.project.core.ResultCode;
-import com.company.project.core.ServiceException;
 import org.apache.commons.codec.digest.DigestUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
@@ -38,9 +38,9 @@ import org.springframework.web.servlet.handler.HandlerInterceptorAdapter;
  * Spring MVC 配置
  */
 @Configuration
-public class WebMvcConfigurer extends WebMvcConfigurerAdapter {
+public class WebMVCConfigurer extends WebMvcConfigurerAdapter {
 
-    private final Logger logger = LoggerFactory.getLogger(WebMvcConfigurer.class);
+    private final Logger logger = LoggerFactory.getLogger(WebMVCConfigurer.class);
     @Value("${spring.profiles.active}")
     private String env;//当前激活的配置文件
 

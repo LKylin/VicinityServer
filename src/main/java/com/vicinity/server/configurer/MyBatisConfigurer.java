@@ -1,4 +1,4 @@
-package com.company.project.configurer;
+package com.vicinity.server.configurer;
 
 import com.github.pagehelper.PageHelper;
 import org.apache.ibatis.plugin.Interceptor;
@@ -15,15 +15,16 @@ import tk.mybatis.spring.mapper.MapperScannerConfigurer;
 
 import javax.annotation.Resource;
 import javax.sql.DataSource;
-import java.util.Properties;
 
-import static com.company.project.core.ProjectConstant.*;
+import static com.vicinity.server.core.ProjectConstant.*;
+
+import java.util.Properties;
 
 /**
  * Mybatis & Mapper & PageHelper 配置
  */
 @Configuration
-public class MybatisConfigurer {
+public class MyBatisConfigurer {
 
     @Bean
     public SqlSessionFactory sqlSessionFactoryBean(DataSource dataSource) throws Exception {
